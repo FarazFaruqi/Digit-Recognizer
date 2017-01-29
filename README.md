@@ -9,5 +9,5 @@ I started out using softmax in tensorflow. This is a nice algorithm for starters
 * ### THRESHOLDING ###
 In order to extract the features, the images had to first be processed. I used OpenCV to Threshold the image using the Otsu's method for calculating the apt threshold value.
 
-* ### PRINCIPAL COMPONENT ANALYSIS ### 
+* ### PRINCIPAL COMPONENT ANALYSIS
 I used PCA as a dimsension reduction algorithm. The original extracted array was 6000x28x28. I did some processing and reduced this array to 786x10 array. Now, for PCA I had to calculate Eigen Vectors for features. But the Eigen AA' would give me 786x786 matrix which is too large to compute for vectors. I tried out A'A and this gave me a 10x10 matrix with the best Eigen vectors. Similarly, I applied this to the test images and extracted the features. Later I calulated the simple distance between the test_image and the given digits. The image with the least distance was predicted as the answer. I got an accuracy of 78.3%.  
