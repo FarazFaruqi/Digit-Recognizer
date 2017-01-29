@@ -6,7 +6,7 @@ I am trying out several machine learning algorithms and concepts. I will include
 * ### SOFTMAX ###
 I started out using softmax in tensorflow. This is a nice algorithm for starters as it gives a fairly good sense of what is to be done and how. Although it gave me was very easy to implement as I had to just call a few functions and not do any proper coding, it gave me a fair idea of what lay ahead.
 
-* ###THRESHOLDING ####
+* ###THRESHOLDING ###
 In order to extract the features, the images had to first be processed. I used OpenCV to Threshold the image using the Otsu's method for calculating the apt threshold value.
 
 * ### PRINCIPAL COMPONENT ANALYSIS ### 
